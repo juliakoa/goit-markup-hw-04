@@ -192,6 +192,7 @@ header {
   column-gap: 30px;
 }
 .team_card {
+  background-color: #fff;
   text-align: center;
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -223,6 +224,11 @@ header {
   column-gap: 10px;
 }
 
+.team-socialmedia-icon {
+  fill: #fff;
+  stroke: #afb1b8;
+}
+
 .logo-cards {
   display: flex;
   align-items: center;
@@ -237,6 +243,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo-space:hover,
+.logo-space:focus {
+  border-color: var(--action-color);
+}
+
+.logo-space:hover .logo-icon,
+.logo-space:focus .logo-icon {
+  fill: var(--action-color);
 }
 
 .buttons-section {
@@ -345,6 +361,11 @@ footer {
   color: var(--footer-item-color);
 }
 
+.footer-socialmedia {
+  display: flex;
+  column-gap: 10px;
+}
+
 .socialmedia-text {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -356,9 +377,14 @@ footer {
   margin-top: 12px;
 }
 
-.footer-socialmedia {
-  display: flex;
-  column-gap: 10px;
+.footer-socialmedia-icon {
+  fill: rgba(255, 255, 255, 0.1);
+  stroke: #fff;
+}
+
+.contact-header_item:hover .contact-icon,
+.contact-header_item:focus .contact-icon {
+  fill: var(--action-color);
 }
 
 .navigation_item:hover,
@@ -368,4 +394,16 @@ footer {
 .contact-footer_item:hover,
 .contact-footer_item:focus {
   color: var(--action-color);
+}
+.socialmedia-icon:hover,
+.socialmedia-icon:focus {
+  fill: var(--action-color);
+  stroke: #fff;
+}
+
+.project_card:hover,
+.project_card:focus {
+  box-shadow: 1px 4px 6px 0px #00000029;
+  box-shadow: 0px 4px 4px 0px #0000000f;
+  box-shadow: 0px 1px 1px 0px #0000001f;
 }
