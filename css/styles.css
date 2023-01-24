@@ -138,6 +138,17 @@ header {
   column-gap: 30px;
 }
 
+.introduction-picture {
+  height: 120px;
+  width: 270px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .introduction_title {
   font-weight: 700;
   font-size: 14px;
@@ -201,7 +212,31 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--description-color);
+  margin-bottom: 16px;
+}
+
+.team-socialmedia {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.logo-cards {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.logo-space {
+  height: 92px;
+  width: 170px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttons-section {
@@ -276,6 +311,11 @@ footer {
   padding-bottom: 60px;
 }
 
+.flex-footer {
+  display: flex;
+  justify-content: start;
+  column-gap: 70px;
+}
 .logo--end {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -303,6 +343,22 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-item-color);
+}
+
+.socialmedia-text {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+.footer-socialmedia {
+  display: flex;
+  column-gap: 10px;
 }
 
 .navigation_item:hover,
