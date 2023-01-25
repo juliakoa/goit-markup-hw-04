@@ -91,6 +91,9 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--description-color);
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .slogan-section {
@@ -103,7 +106,10 @@ header {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/background.jpg);
-  max-width: 1600px;
+}
+
+.container.slogan-container {
+  text-align: center;
 }
 
 .slogan {
@@ -112,7 +118,6 @@ header {
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: #fff;
-  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -128,9 +133,6 @@ header {
   border-radius: 4px;
   border: none;
   padding: 10px 42px;
-  text-align: center;
-  margin: auto;
-  display: flex;
 }
 .introduction {
   padding-bottom: 0;
@@ -249,6 +251,10 @@ header {
   align-items: center;
 }
 
+.logo-icon {
+  fill: #afb1b8;
+}
+
 .logo-space:hover,
 .logo-space:focus {
   border-color: var(--action-color);
@@ -304,6 +310,12 @@ header {
   width: 100%;
 }
 
+.project_card:hover,
+.project_card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project_name {
   font-weight: 700;
   font-size: 18px;
@@ -323,9 +335,6 @@ header {
 }
 
 footer {
-  margin: 0;
-  padding: 0;
-  width: 100%;
   background-color: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -399,15 +408,9 @@ footer {
 .contact-footer_item:focus {
   color: var(--action-color);
 }
+
 .socialmedia-icon:hover,
 .socialmedia-icon:focus {
   fill: var(--action-color);
   stroke: #fff;
-}
-
-.project_card:hover,
-.project_card:focus {
-  box-shadow: 1px 4px 6px 0px #00000029;
-  box-shadow: 0px 4px 4px 0px #0000000f;
-  box-shadow: 0px 1px 1px 0px #0000001f;
 }
